@@ -10,9 +10,11 @@ with st.form(key="Band Name Generator"):
 
     submit_button = st.form_submit_button(label="Submit")
 
+
 if submit_button:
     if city and pet_name:
         f"Your band name could be: "
         st.code(f"{city} {pet_name} Rockstars".title())
+        st.balloons()
     else:
-        st.exception(ValueError("Please fully fill the form."))
+        st.warning("Please fill in all of the fields.")
