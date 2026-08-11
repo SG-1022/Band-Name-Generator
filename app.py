@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Band Name Generator")
 
-with st.form(key="Band Name Generator"):
+with st.form(key="Band Name Generator", clear_on_submit=True):
 
     city = st.text_input("Enter your city")
     pet_name = st.text_input("Enter your pet name")
